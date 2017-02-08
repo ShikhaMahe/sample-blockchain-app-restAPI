@@ -1,4 +1,3 @@
-process.env.GOPATH = __dirname;
 
 var util = require('util');
 var fs = require('fs');
