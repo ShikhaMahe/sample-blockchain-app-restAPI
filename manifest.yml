@@ -1,0 +1,15 @@
+---
+declared-services:
+  cpblockchain:
+    label: ibm-blockchain-5-prod-poc
+    plan: ibm-blockchain-plan-5-prod
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: sample-BCapp-rest
+  host: sample-BCapp-rest
+  disk_quota: 1024M
+  services:
+  - Blockchainpoc2
