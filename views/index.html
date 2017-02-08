@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="/style/style.css" />
+</head>
+<body>
+	<div class = "container">
+	<div class = "banner">
+		<img class="newappIcon" src="images/newapp-icon.png">
+		<p class = "appTitle">
+		        Sample Blockchain App
+		</p>
+	</div>
+
+
+	<section>
+		<table id='notes' class='records' border='0' cellspacing='0' cellpadding='0'><tbody></tbody></table>
+	</section>
+	<footer>
+		
+		<br><br><br>
+		
+		<form action="/invoke" method="GET">
+		<div>
+		<label class="labelclass"> Blockchain (Write) </label><br/><br/>
+			Key : <input type="text" name="key"><br>
+			Value: <input type="text" name="value"><br><br/>
+			<button class="addBtn" title="Invoke">Write (Invoke)
+			</button>
+			<br>
+		</div>
+		</form>
+
+		<br/><br/>
+		<form action="/read" method="GET">
+		<div>
+		<label class="labelclass"> Blockchain (Read) </label><br/><br/>
+			Key : <input type="text" name="key"><br><br/>
+			<button class="addBtn" title="Read">Read
+			</button>
+			<br>
+		</div>
+		</form>
+
+	</footer>
+	<script type="text/javascript" src="/scripts/util.js"></script>
+	<script type="text/javascript" src="/scripts/index.js"></script>
+	<div id="myImage"><div id="innerImg"></div></div>
+	<br><br><br>
+	</div>
+</body>
+</html>
